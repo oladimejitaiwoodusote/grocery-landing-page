@@ -1,3 +1,120 @@
 .Home {
     background-color: #D9FAFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Home_Left{
+    width: 50%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 40px;
+    margin-left: 80px;
+    margin-bottom: 200px;
+}
+
+.Home_Left_Top span {
+    display: block;
+    font-size: 70px;
+    margin-bottom: 8px;
+}
+
+.Home_Left_Top span:nth-child(2) {
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.Home_Left_Middle p {
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 1.6;
+    color: #333;
+    font-weight: 0.5;
+}
+
+.Home_Left_Bottom button {
+    margin-top: 24px;
+    padding: 20px 50px;
+    font-size: 25px;
+    background-color: #16AB88;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Home_Right{
+    width: 50%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.Home_Right_Top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.Home_Right_Top_Left,
+.Home_Right_Top_Right{
+    position: relative;
+    width: 50%;
+}
+
+.Image_Card{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.Image_Card .block{
+    background-color: white;
+    height: 150;
+    width: 100%;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.Image_Card img{
+    width: 100%;
+    position: absolute;
+    top: -50%;
+    left: 0;
+    z-index: 2;
+    border-radius: 12px;
+}
+
+.Home_Right_Bottom {
+    margin-top: 40px;
+    display: flex;
+    gap: 16px;
+}
+
+.Home_Right_Bottom button {
+    padding: 10px 16px;
+    font-size: 18px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 50px;
+}
+
+.Home_Right_Bottom button:nth-child(1){
+    color: #16AB88;
+    background: white;
+}
+
+.Home_Right_Bottom button:nth-child(2){
+    color: white;
+    background: #16AB88;
 }
