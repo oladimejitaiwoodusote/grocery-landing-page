@@ -43,11 +43,11 @@ function Home() {
                 <div className='block'></div>
                 <img src={img2} alt="img2"/>
               </div>
-            </div>
-            <div>
-              <div className='block'></div>
-              <img src={frame} alt="frame"/>
-            </div>
+              <div>
+                <div className='block'></div>
+                <img src={frame} alt="frame"/>
+              </div>
+            </div>            
           </div>
           <div className='Home_Right_Bottom'>
             <button>&lt;</button>
