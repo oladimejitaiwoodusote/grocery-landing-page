@@ -6,6 +6,7 @@ import Services from './components/Services'
 import Featured from './components/Featured'
 import Goals from './components/Goals'
 import Order from './components/Order'
+import Clients from './components/Clients'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Featured/>
       <Goals/>
       <Order/>
+      <Clients/>
     </>
   )
 }
