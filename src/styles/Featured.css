@@ -1,0 +1,49 @@
+.Featured {
+    background: #D9FAFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.Featured_Left {
+    display: flex;
+    flex-direction: column;
+    font-size: 48px;
+    color: #222;
+    line-height: 1.2;
+}
+
+.highlight-text {
+    background-color: #000;
+    color: #fff;
+    padding: 0 15px;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.Featured_Right {
+    display: flex;
+    margin-right: 40px;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.Featured_Image_Wrapper{
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.Featured_Image_Wrapper img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.Featured_Image_Wrapper highlight-card {
+    background-color: #2ecc71;
+}
