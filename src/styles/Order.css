@@ -1,0 +1,50 @@
+.Order {
+    padding: 2px;
+    text-align: center;
+}
+
+.Order_Top {
+    margin-top: 100px;
+}
+
+.Order_Top .line1,
+.Order_Top .line2 {
+    display: block;
+    font-size: 80px;
+    line-height: 1.2;
+}
+
+.Order_Top .highlight {
+    background-color: black;
+    color: white;
+    padding: 0px 5px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.Order_Middle {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.Order_Middle p{
+    font-size: 16px;
+    color: #555;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+    margin-bottom: 10px;
+}
+
+.Order_Bottom {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.Order_Bottom img {
+    width: 25%;
+    max-width: 500px;
+    border-radius: 12px;
+    object-fit: cover;
+    height: auto;
+}
