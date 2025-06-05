@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import AboutUs from './components/AboutUs'
 import Services from './components/Services'
 import Featured from './components/Featured'
+import Goals from './components/Goals'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <AboutUs/>
       <Services/>
       <Featured/>
+      <Goals/>
     </>
   )
 }
