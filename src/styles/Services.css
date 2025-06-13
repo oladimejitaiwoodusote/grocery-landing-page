@@ -7,13 +7,31 @@
     align-items: center;
 }
 
-.Services_Top span{
-    display: block;
+.Services_Top span {
     font-size: 48px;
     text-align: center;
     line-height: 1.2;
     color: #222;
-}
+  }
+  
+.Services_Top span:nth-child(2) {
+    display: block;
+  }
+
+.Services_Top .highlight-text {
+    background-color: #000;
+    color: #fff !important;
+    padding: 0 10px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+
+.highlight-text {
+    background-color: #000;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 10px;
+  }
 
 .Services_Middle p {
     max-width: 800px;
@@ -62,7 +80,7 @@
 }
 
 .highlight-card {
-    background-color: #2ecc71; /* a nice green */
+    background-color: #16AB88; /* a nice green */
     color: #fff;
 }
   
