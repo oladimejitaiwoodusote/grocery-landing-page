@@ -7,6 +7,7 @@ import Featured from './components/Featured'
 import Goals from './components/Goals'
 import Order from './components/Order'
 import Clients from './components/Clients'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Goals/>
       <Order/>
       <Clients/>
+      <Footer/>
     </>
   )
 }
