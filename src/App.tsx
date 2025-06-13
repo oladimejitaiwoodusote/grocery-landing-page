@@ -12,7 +12,7 @@ import Footer from './components/Footer'
 function App() {
 
   return (
-    <>
+    <div className='App_Container'>
       <Navbar/>
       <Home/>
       <AboutUs/>
@@ -22,7 +22,7 @@ function App() {
       <Order/>
       <Clients/>
       <Footer/>
-    </>
+    </div>
   )
 }
 

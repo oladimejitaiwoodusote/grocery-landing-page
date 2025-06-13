@@ -35,3 +35,35 @@
 .Navbar_right span:hover {
     color: #007b7f;
 }
+
+.Navbar_toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .Navbar_right {
+      position: absolute;
+      top: 70px;
+      right: 32px;
+      background-color: #D9FAFF;
+      flex-direction: column;
+      gap: 16px;
+      padding: 16px 24px;
+      border-radius: 12px;
+      display: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      z-index: 10;
+    }
+  
+    .Navbar_right.open {
+      display: flex;
+    }
+  
+    .Navbar_toggle {
+      display: block;
+    }
+  }

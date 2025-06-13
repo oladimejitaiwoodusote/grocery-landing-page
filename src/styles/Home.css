@@ -79,7 +79,7 @@
 
 .Image_Card .block {
     background-color: white;
-    height: 150px; /* you missed 'px' */
+    height: 150px;
     width: 100%;
     border-radius: 12px;
     position: relative;
@@ -133,3 +133,67 @@
     display: block;
     border-radius: 16px;
 }
+
+@media (max-width: 768px) {
+    .Home {
+      flex-direction: column;
+      padding: 0 16px;
+    }
+  
+    .Home_Left,
+    .Home_Right {
+      width: 100%;
+      margin: 40px 0;
+      padding: 0;
+      margin-left: 0;
+    }
+  
+    .Home_Left_Top span {
+      font-size: 36px;
+      text-align: center;
+    }
+  
+    .Home_Left_Middle p {
+      font-size: 14px;
+      text-align: center;
+      padding: 0 10px;
+    }
+  
+    .Home_Left_Bottom {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .Home_Left_Bottom button {
+      padding: 12px 32px;
+      font-size: 18px;
+    }
+  
+    .Home_Right_Top {
+      flex-direction: column;
+      gap: 24px;
+    }
+  
+    .Home_Right_Top_Left,
+    .Home_Right_Top_Right {
+      width: 100%;
+    }
+  
+    .Image_Card .block {
+      height: 120px;
+    }
+  
+    .frame-container img {
+      height: auto;
+    }
+  
+    .Home_Right_Bottom {
+      justify-content: center;
+    }
+  
+    .Home_Right_Bottom button {
+      padding: 8px 14px;
+      font-size: 16px;
+    }
+  }
+  
