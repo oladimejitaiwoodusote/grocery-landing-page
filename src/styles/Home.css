@@ -77,23 +77,24 @@
     margin-bottom: 20px;
 }
 
-.Image_Card .block{
+.Image_Card .block {
     background-color: white;
-    height: 150;
+    height: 150px; /* you missed 'px' */
     width: 100%;
     border-radius: 12px;
     position: relative;
     z-index: 1;
-}
-
-.Image_Card img{
+  }
+  
+  .Image_Card img {
     width: 100%;
+    height: auto;
     position: absolute;
-    top: -50%;
+    top: 0;  /* was top: -50%, which makes image float above */
     left: 0;
     z-index: 2;
     border-radius: 12px;
-}
+  }
 
 .Home_Right_Bottom {
     margin-top: 40px;
@@ -117,4 +118,18 @@
 .Home_Right_Bottom button:nth-child(2){
     color: white;
     background: #16AB88;
+}
+
+.frame-container {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.frame-container img {
+    width: 100%;
+    height: 425px;
+    display: block;
+    border-radius: 16px;
 }

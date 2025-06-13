@@ -44,8 +44,9 @@ function Home() {
                 <img src={img2} alt="img2"/>
               </div>
               <div>
-                <div className='block'></div>
-                <img src={frame} alt="frame"/>
+                <div className="frame-container">
+                  <img src={frame} alt="frame" />
+                </div>
               </div>
             </div>            
           </div>
