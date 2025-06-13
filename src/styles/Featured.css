@@ -26,24 +26,38 @@
 
 .Featured_Right {
     display: flex;
-    margin-right: 40px;
-    gap: 100px;
     flex-wrap: wrap;
-}
+    gap: 40px;
+    align-items: flex-start;
+    overflow: visible; 
+  }
 
-.Featured_Image_Wrapper{
+  .Featured_Image_Wrapper,
+  .Featured_Image_Wrapper_highlight-card {
+    width: 160px;
+    height: 160px;
     border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
+    overflow: hidden; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
 
 .Featured_Image_Wrapper img {
     width: 160px;
     height: 160px;
-    object-fit: cover;
+    object-fit: cover ;
     display: block;
 }
 
-.Featured_Image_Wrapper highlight-card {
+.Featured_Image_Wrapper_highlight-card {
+    border-radius: 20px;
+    overflow: hidden;
     background-color: #2ecc71;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
+
+.Featured_Image_Wrapper_highlight-card img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+  }
