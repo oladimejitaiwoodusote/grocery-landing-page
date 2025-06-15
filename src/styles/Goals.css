@@ -75,4 +75,40 @@
     background-color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
+
+  @media (max-width: 768px) {
+    .Goals {
+      flex-direction: column;
+      padding: 2rem 1rem;
+      gap: 2rem;
+    }
+  
+    .Goals_Left_Top > span {
+      font-size: 36px;
+      text-align: center;
+    }
+  
+    .Goals_Left_Bottom p {
+      font-size: 14px;
+      text-align: center;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  
+    .Goals_Right {
+      width: 100%;
+      gap: 32px;
+    }
+  
+    .Goals_Right_Top img,
+    .Goals_Image_Container {
+      height: 160px;
+    }
+  
+    .icon-overlay {
+      width: 50px;
+      height: 50px;
+      left: -20px;
+    }
+  }
   

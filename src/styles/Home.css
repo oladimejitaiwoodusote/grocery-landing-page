@@ -135,7 +135,6 @@
   background: #16AB88;
 }
 
-/* === Responsive Layout === */
 @media (max-width: 768px) {
   .Home {
     flex-direction: column;
@@ -176,13 +175,13 @@
     gap: 24px;
   }
 
-  .Home_Right_Top_Left{
+  .Home_Right_Top_Left {
     position: relative;
-    width: 50%;
+    width: 100%; /* ✅ was 50% */
     padding-top: 60px;
-    margin-top: 8000px;
-
+    margin-top: 0; /* ✅ was 8000px */
   }
+
   .Home_Right_Top_Right {
     width: 100%;
   }
