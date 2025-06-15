@@ -1,7 +1,6 @@
 import '../styles/Home.css'
 import img1 from '../assets/img1.jpg' 
 import card from '../assets/card.jpg' 
-import img2 from '../assets/img2.jpg' 
 import frame from '../assets/frame.jpg' 
 
 
@@ -29,24 +28,14 @@ function Home() {
         <div className='Home_Right'>
           <div className='Home_Right_Top'>
             <div className='Home_Right_Top_Left'>
-              <div className='Image_Card'>
-                <div className='block'></div>
-                <img src={img1} alt="img1"/>
-              </div>
-              <div className='Image_Card'>
-                <div className='block'></div>
-                <img src={card} alt="card"/>
+              <div className="Image_Overlap_Container">
+                <img src={card} alt="card" className="card-image"/>
+                <img src={img1} alt="img1" className="img1-overlap"/>
               </div>
             </div>
             <div className='Home_Right_Top_Right'>
-              <div className='Image_Card'>
-                <div className='block'></div>
-                <img src={img2} alt="img2"/>
-              </div>
-              <div>
-                <div className="frame-container">
-                  <img src={frame} alt="frame" />
-                </div>
+              <div className="frame-container">
+                <img src={frame} alt="frame" />
               </div>
             </div>            
           </div>
