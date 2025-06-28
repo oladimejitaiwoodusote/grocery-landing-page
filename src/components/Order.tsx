@@ -6,7 +6,7 @@ import Order3 from '../assets/Order3.jpg'
 
 function Order() {
   return (
-    <div className='Order'>
+    <div className='Order'id='order'>
         <div className='Order_Top'>
             <span className='line1'>Order Today And</span>
             <span className='line2'>

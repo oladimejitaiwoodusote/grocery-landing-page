@@ -6,7 +6,7 @@ import Client3 from '../assets/Client3.jpg'
 
 function Clients() {
   return (
-    <div className='Clients'>
+    <div className='Clients' id='clients'>
         <div className='Clients_Left'>
             <img src={Client1} alt="Client1"/>
             <img src={Client2} alt="Client2"/>

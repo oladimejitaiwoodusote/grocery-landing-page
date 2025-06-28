@@ -9,7 +9,7 @@ import Goals3icon from '../assets/Goals3icon.jpg'
 
 function Goals() {
   return (
-    <div className='Goals'>
+    <div className='Goals' id="goals">
         <div className='Goals_Left'>
             <div className='Goals_Left_Top'>
                 <span><span className='highlight'>Goals</span> of Our</span>

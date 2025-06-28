@@ -8,7 +8,7 @@ import Featured4 from '../assets/Featured4.jpg'
 
 function Featured() {
   return (
-    <div className='Featured'>
+    <div className='Featured' id="featured">
         <div className='Featured_Left'>
             <span>Our</span>
             <span className='highlight-text'>Featured</span>

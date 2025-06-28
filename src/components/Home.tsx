@@ -6,7 +6,7 @@ import frame from '../assets/frame.jpg'
 
 function Home() {
   return (
-    <div className="Home">
+    <div className="Home" id="home">
         <div className="Home_Left">
           <div className='Home_Left_Top'>
             <span>Enjoy the Results</span>

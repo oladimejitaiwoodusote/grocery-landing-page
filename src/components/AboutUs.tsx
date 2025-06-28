@@ -8,7 +8,7 @@ import frame2 from '../assets/Frame2.jpg'
 
 function AboutUs() {
   return (
-    <div className='AboutUs'>
+    <div className='AboutUs' id ="about">
         <div className='AboutUs_Left'>
             <div className='AboutUs_Left_Top'>
                 <span>Finest</span>

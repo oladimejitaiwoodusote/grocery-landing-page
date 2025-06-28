@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.App_Container {
+  padding-top: 90px; /* Adjusted from 80px */
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
