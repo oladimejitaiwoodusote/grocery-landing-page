@@ -1,23 +1,30 @@
 .Home {
   background-color: #D9FAFF;
-  display: flex;
-  justify-content: space-between;
+  padding: 0;
+  scroll-margin-top: 90px;
 }
 
+.Home_Content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+
+/* === Left Side === */
 .Home_Left {
-  width: 50%;
-  margin-top: 100px;
+  flex: 1 1 50%;
+  min-width: 0;
+  padding: 100px 2rem 200px 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 40px;
-  margin-left: 80px;
-  margin-bottom: 200px;
 }
 
 .Home_Left_Top span {
   display: block;
-  font-size: 70px;
+  font-size: clamp(2rem, 6vw, 70px);
   margin-bottom: 8px;
 }
 
@@ -30,17 +37,19 @@
 }
 
 .Home_Left_Middle p {
-  font-size: 16px;
+  font-size: 1rem;
   margin-top: 20px;
   line-height: 1.6;
   color: #333;
-  font-weight: 0.5;
+}
+
+.Home_Left_Bottom {
+  margin-top: 24px;
 }
 
 .Home_Left_Bottom button {
-  margin-top: 24px;
   padding: 20px 50px;
-  font-size: 25px;
+  font-size: 1.25rem;
   background-color: #16AB88;
   color: white;
   border: none;
@@ -49,13 +58,18 @@
   transition: background-color 0.3s ease;
 }
 
+.Home_Left_Bottom button:hover {
+  background-color: #128c70;
+}
+
+/* === Right Side === */
 .Home_Right {
-  width: 50%;
-  margin-top: 100px;
+  flex: 1 1 50%;
+  min-width: 0;
+  padding: 100px 2rem 200px 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 200px;
 }
 
 .Home_Right_Top {
@@ -63,22 +77,25 @@
   justify-content: space-between;
   width: 100%;
   gap: 20px;
+  max-width: 100%;
 }
 
-.Home_Right_Top_Left{
-  padding-top: 150px;
+.Home_Right_Top_Left {
   width: 50%;
+  padding-top: 0;
 }
+
 .Home_Right_Top_Right {
-  position: relative;
   width: 50%;
+  position: relative;
 }
 
-/* === New Image Overlap Layout === */
+/* === Image Overlap === */
 .Image_Overlap_Container {
   position: relative;
   width: 100%;
   height: 400px;
+  margin-top: 60px;
 }
 
 .card-image {
@@ -91,7 +108,7 @@
 
 .img1-overlap {
   position: absolute;
-  bottom: 50%; /* Adjust this to control the amount of overlap */
+  bottom: 30%;
   width: 100%;
   border-radius: 12px;
   z-index: 2;
@@ -107,14 +124,16 @@
 .frame-container img {
   width: 100%;
   height: 425px;
-  display: block;
   border-radius: 16px;
+  object-fit: cover;
 }
 
+/* Bottom buttons */
 .Home_Right_Bottom {
   margin-top: 40px;
   display: flex;
   gap: 16px;
+  justify-content: flex-start;
 }
 
 .Home_Right_Bottom button {
@@ -135,27 +154,29 @@
   background: #16AB88;
 }
 
-@media (max-width: 768px) {
-  .Home {
+/* === Responsive Styles === */
+@media (max-width: 1024px) {
+  .Home_Content {
     flex-direction: column;
-    padding: 0 16px;
   }
 
   .Home_Left,
   .Home_Right {
     width: 100%;
-    margin: 40px 0;
-    padding: 0;
-    margin-left: 0;
+    padding: 40px 1rem;
   }
 
+  .Home_Right {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
   .Home_Left_Top span {
-    font-size: 36px;
     text-align: center;
   }
 
   .Home_Left_Middle p {
-    font-size: 14px;
     text-align: center;
     padding: 0 10px;
   }
@@ -167,29 +188,34 @@
 
   .Home_Left_Bottom button {
     padding: 12px 32px;
-    font-size: 18px;
+    font-size: 1rem;
   }
 
   .Home_Right_Top {
     flex-direction: column;
-    gap: 24px;
   }
 
-  .Home_Right_Top_Left {
-    position: relative;
-    width: 100%; /* ✅ was 50% */
-    padding-top: 60px;
-    margin-top: 0; /* ✅ was 8000px */
-  }
-
+  .Home_Right_Top_Left,
   .Home_Right_Top_Right {
     width: 100%;
+    padding-top: 30px;
   }
 
   .Image_Overlap_Container {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .card-image,
+  .img1-overlap {
+    position: static;
+    width: 100%;
+    border-radius: 12px;
   }
 
   .frame-container img {

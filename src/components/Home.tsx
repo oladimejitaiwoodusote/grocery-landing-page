@@ -7,6 +7,7 @@ import frame from '../assets/frame.jpg'
 function Home() {
   return (
     <div className="Home" id="home">
+      <div className='container Home_Content'>
         <div className="Home_Left">
           <div className='Home_Left_Top'>
             <span>Enjoy the Results</span>
@@ -44,6 +45,7 @@ function Home() {
             <button>&gt;</button>
           </div>
         </div>
+      </div>
     </div>
   )
 }
