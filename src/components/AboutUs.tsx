@@ -4,8 +4,6 @@ import Icon2 from '../assets/Icon2.jpg'
 import img3 from '../assets/img3.jpg'
 import frame2 from '../assets/Frame2.jpg'
 
-
-
 function AboutUs() {
   return (
     <div className='AboutUs' id ="about">
