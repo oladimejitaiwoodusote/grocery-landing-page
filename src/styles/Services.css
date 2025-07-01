@@ -91,3 +91,59 @@
 .highlight-card p {
     color: #f2f2f2;
 }
+
+@media (max-width: 1024px) {
+    .Services {
+      padding: 60px 40px;
+    }
+  
+    .Services_Top span {
+      font-size: 36px;
+      text-align: center;
+    }
+  
+    .Services_Middle p {
+      font-size: 15px;
+    }
+  
+    .Services_Bottom {
+      justify-content: center;
+    }
+  
+    .Service_Card {
+      flex: 1 1 45%;
+      max-width: none;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .Service_Card span {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .Services {
+      padding: 40px 20px;
+    }
+  
+    .Services_Top span {
+      font-size: 28px;
+    }
+  
+    .Services_Middle p {
+      font-size: 14px;
+      margin-top: 12px;
+    }
+  
+    .Service_Card {
+      flex: 1 1 100%;
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .Service_Card_Body p {
+      font-size: 13px;
+    }
+  }
+  
