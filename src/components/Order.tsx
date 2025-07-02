@@ -3,7 +3,6 @@ import Order1 from '../assets/Order1.jpg'
 import Order2 from '../assets/Order2.jpg' 
 import Order3 from '../assets/Order3.jpg' 
 
-
 function Order() {
   return (
     <div className='Order'id='order'>

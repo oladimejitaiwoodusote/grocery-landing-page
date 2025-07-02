@@ -1,50 +1,108 @@
 .Order {
-    padding: 2px;
-    text-align: center;
+background: #fff;
+padding: 80px 100px;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .Order_Top {
-    margin-top: 100px;
+margin-top: 20px;
 }
 
 .Order_Top .line1,
 .Order_Top .line2 {
-    display: block;
-    font-size: 60px;
-    line-height: 1.2;
+display: block;
+font-size: 60px;
+line-height: 1.2;
+color: #222;
 }
 
 .Order_Top .highlight {
-    background-color: black;
-    color: white;
-    padding: 0px 5px;
-    margin-right: 10px;
-    border-radius: 20px;
+background-color: black;
+color: white;
+padding: 0 12px;
+margin-right: 8px;
+border-radius: 20px;
 }
 
 .Order_Middle {
-    text-align: center;
-    margin-top: 40px;
+margin-top: 24px;
 }
 
-.Order_Middle p{
-    font-size: 16px;
-    color: #555;
-    max-width: 1000px;
-    margin: 0 auto 40px auto;
-    margin-bottom: 10px;
+.Order_Middle p {
+font-size: 16px;
+color: #555;
+max-width: 800px;
+margin: 0 auto;
+line-height: 1.6;
 }
 
 .Order_Bottom {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
+display: flex;
+gap: 24px;
+justify-content: center;
+align-items: flex-start;
+flex-wrap: wrap;
+margin-top: 40px;
 }
 
 .Order_Bottom img {
-    width: 25%;
-    max-width: 500px;
-    border-radius: 12px;
-    object-fit: cover;
-    height: auto;
+width: 100%;
+max-width: 300px;
+border-radius: 16px;
+object-fit: cover;
+box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+transition: transform 0.3s ease;
+}
+
+.Order_Bottom img:hover {
+transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+.Order {
+padding: 60px 40px;
+}
+
+.Order_Top .line1,
+.Order_Top .line2 {
+font-size: 42px;
+}
+
+.Order_Bottom {
+gap: 16px;
+}
+
+.Order_Bottom img {
+max-width: 100%;
+}
+}
+
+@media (max-width: 600px) {
+.Order {
+padding: 40px 20px;
+}
+
+.Order_Top .line1,
+.Order_Top .line2 {
+font-size: 32px;
+}
+
+.Order_Middle p {
+font-size: 14px;
+}
+
+.Order_Bottom {
+flex-direction: column;
+align-items: center;
+gap: 20px;
+}
+
+.Order_Bottom img {
+width: 100%;
+max-width: 90%;
+}
 }
